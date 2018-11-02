@@ -17,3 +17,6 @@
     - name: debug print all interfaces      
       debug:
         msg: "{{ interfaces.stdout }}"
+        
+    - name: pause for 30 seconds
+      pause: seconds=30
