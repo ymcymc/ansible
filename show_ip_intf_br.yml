@@ -18,5 +18,5 @@
       debug:
         msg: "{{ interfaces.stdout }}"
         
-    - name: pause for 30 seconds
-      pause: seconds=30
+    #- name: pause for 30 seconds
+    #  pause: seconds=30
