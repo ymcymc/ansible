@@ -10,13 +10,6 @@
         wait_for: result[0] contains Interface
       register: interfaces
 
-    - name: debug print --extra-vars
-      debug:
-        msg: "extra vars value : {{ testExtraVar }}"
-
     - name: debug print all interfaces      
       debug:
         msg: "{{ interfaces.stdout }}"
-        
-    - name: pause for 30 seconds
-      pause: seconds=30
