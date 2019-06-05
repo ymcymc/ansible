@@ -4,12 +4,12 @@
  
   tasks:
     # Cisco IOS show cmd
-    - name: run show ip interface brief IOS
+    - name: cisco ios cmd - show ip interface brief
       ios_command:
-        commands: show ip interface brief	
+        commands: show ip interface brief  
         wait_for: result[0] contains Interface
       register: interfaces
-
-    - name: debug print all interfaces      
+ 
+    - name: debug print all interfaces     
       debug:
         msg: "{{ interfaces.stdout }}"
